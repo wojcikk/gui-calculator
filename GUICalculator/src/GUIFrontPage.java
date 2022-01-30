@@ -6,7 +6,7 @@ import java.awt.*;
 public class GUIFrontPage extends JFrame {
 
     GUITopScreen guiTopScreen = new GUITopScreen();
-    GUIButtonsPanel guiButtonsPanel = new GUIButtonsPanel();
+    GUIButtonsPanel guiButtonsPanel = new GUIButtonsPanel(guiTopScreen);
 
     GUIFrontPage() {
         this.setMinimumSize(new Dimension(300, 400));
