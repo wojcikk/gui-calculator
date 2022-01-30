@@ -7,6 +7,12 @@ import java.util.ArrayList;
 
 public class GUIButtonsPanel  {
 
+    private final GUITopScreen guiTopScreen;
+
+    public GUIButtonsPanel(GUITopScreen guiTopScreen) {
+        this.guiTopScreen = guiTopScreen;
+    }
+
     public Dimension getMinimumSize() {
         return new Dimension(500, 500);
     }
@@ -17,7 +23,7 @@ public class GUIButtonsPanel  {
 
         panel.setLayout(new GridLayout(6, 4, 0, 0));
 
-        GUIButtons buttonClass = new GUIButtons();
+        GUIButtons buttonClass = new GUIButtons(guiTopScreen);
         ArrayList<JButton> buttons = buttonClass.getButtons();
 
 
