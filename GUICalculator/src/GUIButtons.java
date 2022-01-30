@@ -10,9 +10,13 @@ public class GUIButtons implements ActionListener {
 
     Calculations calculations = new Calculations();
 
-    GUITopScreen guiTopScreen = new GUITopScreen();
+    private final GUITopScreen guiTopScreen;
 
     ArrayList<JButton> buttons = new ArrayList<>();
+
+    public GUIButtons(GUITopScreen guiTopScreen) {
+        this.guiTopScreen = guiTopScreen;
+    }
 
     public ArrayList getButtons() {
 
